@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh">
+<script type="module" src="../include/SR2VZnote.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../include/SR2VZnote.css">
+    <title>老狗的RS2文档</title>
+</head>
+<body>
+
+    <lf-catalogue></lf-catalogue>
+
+
+
+
+    <lf-content>
+        <div style="margin-bottom: 2em;">
+            <p>Vizzy > 简介</p>
+        </div>
+
+
+        <h1>Vizzy</h1> 
+        <p>Vizzy是一个可视化的编程系统，相较于其他编程引擎有跟高的可读性，但是效率欠佳，总的来讲凑合可用，而且对于这个游戏里来讲已经完全够用了。</p>
+        <p>Vizzy不仅能写在芯片里，同样也可以写在任意一个零件里面。vizzy只会在玩家操控的飞船的物理距离内运行，如果太远会被优化掉，不用担心，靠近了又会继续运行。</p>
+       
+        <h3>基本结构</h3> 
+        <p>Vizzy跟其他编程引擎类似，自上而下依次运行，只是更加直观和便利，它没有严格点的格式要求，在菜单栏里有很多模块，可以被拖出来链接到对应的地方</p>
+        <p>效果如图此类型的模块都可以上下串联起来，并依次运行</p>
+        <vizzy-div>
+            <vizzy-event>
+                <vizzy-text>on start</vizzy-text>
+            </vizzy-event>
+            <vizzy-loopheader>
+                <vizzy-text>while</vizzy-text>
+                <vizzy-discriminant> 
+                    <vizzy-text>true</vizzy-text>
+                </vizzy-discriminant>
+            </vizzy-loopheader>
+            <vizzy-loopbody> 
+                <vizzy-instruction>
+                    <vizzy-text>wait until</vizzy-text>
+                    <vizzy-varbles>
+                        <vizzy-text>varbles 1</vizzy-text>
+                    </vizzy-varbles>
+            </vizzy-instruction>
+            </vizzy-loopbody>
+        </vizzy-div>
+
+
+        <p>这些圆圆的模块可以被放在这些洞里，只要概念没有错都是可以运行的, 其次vizzy没有什么严格的格式要求可以放心食用，非常适合程序小白图一乐
+        </p>    
+        <vizzy-div>
+            <vizzy-formula>
+                <vizzy-text>if</vizzy-text>
+                <vizzy-octagon> 
+                </vizzy-octagon>
+                <vizzy-text>them</vizzy-text>
+                <vizzy-elliptical>
+                    <vizzy-text>0</vizzy-text>
+                </vizzy-elliptical>
+                <vizzy-text>else</vizzy-text>
+                <vizzy-elliptical>
+                    <vizzy-text>0</vizzy-text>
+                </vizzy-elliptical>
+            </vizzy-formula>
+        </vizzy-div>
+        <vizzy-div>
+            <vizzy-formula>
+                <vizzy-text>if</vizzy-text>
+                <vizzy-discriminant> 
+                    <vizzy-text>true</vizzy-text>
+                </vizzy-discriminant>
+                <vizzy-text>them</vizzy-text>
+                <vizzy-elliptical>
+                    <vizzy-text>100</vizzy-text>
+                </vizzy-elliptical>
+                <vizzy-text>else</vizzy-text>
+                <vizzy-varbles>
+                    <vizzy-text>varbles 1</vizzy-text>
+                </vizzy-varbles>
+            </vizzy-formula>
+        </vizzy-div>
+        
+    </lf-content>
+</body>
+</html>
