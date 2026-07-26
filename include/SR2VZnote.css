@@ -51,10 +51,6 @@ lf-catalogue[open]
 {
     /*filter: drop-shadow(3px 3px 2px gray);*/
 }
-svg {
-    margin-top: -0px; 
-    margin-bottom: -4px;
-}
 p {
     text-indent: 2em; 
     margin-top: 0px;  

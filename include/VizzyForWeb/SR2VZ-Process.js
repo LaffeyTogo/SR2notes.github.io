@@ -11,38 +11,24 @@ class VizzyEvent extends HTMLElement
         // 修改自己的风格
         this.style.minHeight        = '45px';
         this.style.minWidth         = '60px';
-        this.style.display          = 'flex';
-        this.style.flexDirection    = 'row';
         this.style.width            = 'fit-content';
+        this.style.position         = "relative";
+
+        this.style.display          = 'inline-flex';
         this.style.alignItems       = 'center';
+
         this.style.paddingLeft      = '5px';
         this.style.paddingRight     = '5px';
         this.style.paddingTop       = '0px';
-        this.style.paddingBottom    = '0px';
-        if (this.parentNode.firstElementChild === this) 
-        {
-            this.style.marginTop    ='5px';
-        } 
-        else 
-        {
-            if (this.parentElement.tagName === 'VIZZY-LOOPBODY' && this.previousElementSibling.tagName === 'svg')
-            {
-                this.style.marginTop    ='0px';
-            } 
-            else
-            {
-                this.style.marginTop    = '-5px';
-            }
-        }
-
-
+        this.style.paddingBottom    = '5px';
 
 
         //画背景 创建 SVG 和图像  
         const SVG_ = document.createElementNS("http://www.w3.org/2000/svg", "svg");
         SVG_.style.position = "absolute";
+        SVG_.style.left = "-1";
+        SVG_.style.top = "-1";
         SVG_.style.zIndex = "-1";
-        SVG_.style.marginLeft = '-5px';
         SVG_.setAttribute("width", "100%");
         SVG_.setAttribute("height", "100%");
 
@@ -97,29 +83,19 @@ class VizzyInstruction extends HTMLElement
         // 修改自己的风格
         this.style.minHeight        = '45px';
         this.style.minWidth         = '60px';
-        this.style.display          = 'flex';
-        this.style.flexDirection    = 'row';
         this.style.width            = 'fit-content';
+        this.style.position         = "relative";
+
+        this.style.display          = 'inline-flex';
         this.style.alignItems       = 'center';
+
         this.style.paddingLeft      = '5px';
         this.style.paddingRight     = '5px';
         this.style.paddingTop       = '0px';
-        this.style.paddingBottom    = '0px';
-        if (this.parentNode.firstElementChild === this) 
-        {
-            this.style.marginTop    ='5px';
-        } 
-        else 
-        {
-            if (this.parentElement.tagName === 'VIZZY-LOOPBODY' && this.previousElementSibling.tagName === 'svg')
-            {
-                this.style.marginTop    ='0px';
-            } 
-            else
-            {
-                this.style.marginTop    = '-5px';
-            }
-        }
+        this.style.paddingBottom    = '5px';
+        this.style.marginTop        = '0px';
+        this.style.marginBottom     = '-5px';
+
 
 
 
@@ -127,8 +103,9 @@ class VizzyInstruction extends HTMLElement
         //画背景 创建 SVG 和图像  
         const SVG_ = document.createElementNS("http://www.w3.org/2000/svg", "svg");
         SVG_.style.position = "absolute";
+        SVG_.style.left = "-1";
+        SVG_.style.top = "-1";
         SVG_.style.zIndex = "-1";
-        SVG_.style.marginLeft = '-5px';
         SVG_.style.marginBottom = "0px";
         SVG_.setAttribute("width", "100%");
         SVG_.setAttribute("height", "100%");

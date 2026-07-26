@@ -14,7 +14,10 @@ class Vizzy extends HTMLElement
 
     connectedCallback()
     {
-        this.style.all='unset'
+        this.style.paddingTop = "10px"
+        this.style.paddingBottom = "10px"
+        this.style.display = 'inline-flex'
+        this.style.flexDirection ="column"
     }
 }
 
@@ -39,18 +42,7 @@ class VizzyInformation extends HTMLElement
         this.style.flexDirection    = 'row';
         this.style.width            = 'fit-content';
         this.style.alignItems       = 'center';
-
-        
-        if (this.parentNode.tagName === "VIZZY-INSTRUCTION") 
-        {
-            this.style.transform    = "translateY(-2.5px)";
-        } 
-        else 
-        {
-            this.style.marginTop         = '3px';
-            this.style.marginBottom      = '3px';
-            this.style.height            = 'fit-content';
-        }
+        this.style.height           = 'fit-content';
 
         //画背景 创建 SVG 和图像  
         const SVG_ = document.createElementNS("http://www.w3.org/2000/svg", "svg");
@@ -110,8 +102,9 @@ class VizzyText extends HTMLElement
     {
         this.style.marginLeft           = '5px';       
         this.style.marginRight          = '5px';     
-        this.style.display              = 'flex';     
+        this.style.display              = 'inline-flex';      
         this.style.alignItems           = 'center';
+        this.style.textalign            = "center";
         this.style.color                = 'white'; 
         this.style.whiteSpace           = 'nowrap';
 
@@ -129,10 +122,6 @@ class VizzyText extends HTMLElement
             this.style.marginLeft       = '11px';
             this.style.marginRight      = '10px';
         } 
-        else if(this.parentNode.tagName === "VIZZY-LOOPHEADER")
-        {
-            this.style.transform = "translateY(-2.5px)";
-        }
         else if (this.parentNode.tagName === "VIZZY-OPERATORS" ) 
         {
             this.style.marginTop        = '0px';
@@ -168,10 +157,7 @@ class VizzyText extends HTMLElement
             this.style.marginLeft       = '15px';
             this.style.marginRight      = '15px';
         }
-        else 
-        {
-            this.style.transform = "translateY(-2.5px)";
-        }
+        
         
 
     }

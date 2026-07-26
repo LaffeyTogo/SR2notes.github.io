@@ -149,32 +149,17 @@ class VizzyMethod extends HTMLElement
 
     connectedCallback()
     {
-        // 用div定高度和大小
-        // VizzyMethod (上5 下11 自由大小)(居中)
-        // |-- SVG
-        // |   |-- rect
-        // |   |-- polyline
-        // |-- TypeTag.png
-        // |-- text
-
-
-        // 修改自己的风格
         this.style.minHeight        = '28px';
         this.style.minWidth         = '28px';
         this.style.marginLeft       = '5px';
         this.style.marginRight      = '5px';
-        this.style.display          = 'flex';
-        this.style.flexDirection    = 'row';
         this.style.width            = 'fit-content';
-        this.style.alignItems       = 'center';
-        if (this.parentNode.tagName === "VIZZY-INSTRUCTION") 
-        {
-            this.style.transform    = "translateY(-2.5px)";
-        } 
-        else 
-        {
+        this.style.position         = "relative";
 
-        }
+        this.style.display          = 'inline-flex';
+        this.style.alignItems       = 'center';
+
+
 
         //画背景 创建 SVG 和图像  
         const SVG_ = document.createElementNS("http://www.w3.org/2000/svg", "svg");
@@ -228,7 +213,16 @@ class VizzyMethod extends HTMLElement
                 break;
             default:
         }
-        this.appendChild(img_);
+        if (this.children.length >= 2)
+        {
+            this.insertBefore(img_, this.children[1]);
+        }
+        else
+        {
+            this.appendChild(img_);
+        }
+
+
 
         // 创建 ResizeObserver 大小变化的时候同步更新RECT
         const resizeObserver = new ResizeObserver(() => 

@@ -7,31 +7,21 @@ class VizzyVarbles extends HTMLElement
 
     connectedCallback()
     {
-        // 用div定高度和大小
-        // VizzyVarbles
-        // |-- SVG
-        // |   |-- rect
-        // |-- text
-
-
         // 修改自己的风格
         this.style.minHeight        = '28px';
         this.style.minWidth         = '28px';
         this.style.marginLeft       = '5px';
         this.style.marginRight      = '5px';
-        this.style.display          = 'flex';
+        this.style.width            = 'fit-content';
+        this.style.position         = "relative";
+
+        this.style.display          = 'inline-flex';
+        this.style.alignItems       = 'center';
+
         this.style.flexDirection    = 'row';
         this.style.width            = 'fit-content';
-
-        if (this.parentNode.tagName === "VIZZY-INSTRUCTION") 
-        {
-            this.style.transform    = "translateY(-2.5px)";
-        } 
-        else 
-        {
-            this.style.marginTop    = '3px';
-            this.style.marginBottom = '3px';
-        }
+        this.style.marginTop        = '3px';
+        this.style.marginBottom     = '3px';
 
         // 画背景 创建 SVG 和图像  
         const SVG_ = document.createElementNS("http://www.w3.org/2000/svg", "svg");
@@ -94,7 +84,7 @@ class VizzyParameter extends HTMLElement
         this.style.minWidth         = '28px';
         this.style.marginLeft       = '5px';
         this.style.marginRight      = '5px';
-        this.style.display          = 'flex';
+        this.style.display          = 'inline-block';
         this.style.flexDirection    = 'row';
         this.style.width            = 'fit-content';
 
@@ -161,27 +151,27 @@ class VizzyDiscriminant extends HTMLElement
         // 修改自己的风格
         this.style.minHeight        = '35px';
         this.style.minWidth         = '35px';
+        this.style.width            = 'fit-content';
+        this.style.position         = "relative";
+
+        this.style.display          = 'inline-flex';
+        this.style.alignItems       = 'center';
+
         this.style.marginLeft       = '5px';
         this.style.marginRight      = '5px';
         this.style.paddingLeft      = '5px';
         this.style.paddingRight     = '5px';
-        this.style.display          = 'flex';
-        this.style.flexDirection    = 'row';
-        this.style.width            = 'fit-content';
-        this.style.alignItems       = 'center';
 
         
         if (this.parentNode.tagName === "VIZZY-INSTRUCTION") 
         {
             this.style.marginTop     = '6px';
             this.style.marginBottom  = '6px';
-            this.style.transform     = "translateY(-2.5px)";
         } 
         else if (this.parentNode.tagName === "VIZZY-LOOPHEADER") 
         {
-            this.style.marginTop     = '6px';
-            this.style.marginBottom  = '6px';
-            this.style.transform     = "translateY(-2.5px)";
+            this.style.marginTop     = '2px';
+            this.style.marginBottom  = '2px';
         } 
         else 
         {
@@ -248,20 +238,22 @@ class VizzyOperators extends HTMLElement
         // 修改自己的风格
         this.style.minHeight        = '35px';
         this.style.minWidth         = '70px';
+        this.style.width            = 'fit-content';
+        this.style.position         = "relative";
+
+        this.style.display          = 'inline-flex';
+        this.style.alignItems       = 'center';
+
         this.style.marginLeft       = '5px';
         this.style.marginRight      = '5px';
         this.style.paddingLeft      = '5px';
         this.style.paddingRight     = '5px';
-        this.style.display          = 'flex';
-        this.style.flexDirection    = 'row';
-        this.style.width            = 'fit-content';
-        this.style.alignItems       = 'center';
+        
         
         if (this.parentNode.tagName === "VIZZY-INSTRUCTION") 
         {
             this.style.marginTop     = '6px';
             this.style.marginBottom  = '6px';
-            this.style.transform     = "translateY(-2.5px)";
         } 
         else 
         {
