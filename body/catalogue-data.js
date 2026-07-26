@@ -52,7 +52,7 @@ export const Catalogue =
             },
             {
                 id: 2020,
-                title: "运算符 Operators",
+                title: "运算符 (Operators)",
                 href:"../vzIntroduction/Introduction.html",
             }
         ]
@@ -76,8 +76,8 @@ export const Catalogue =
         [
             {
                 id: 4010,
-                href:"../program/wait.html",
-                title: "wait ( ) seaonds"
+                href:"../example/PID_Hover.html",
+                title: "PID实现火箭悬停"
             }
         ]
     },

@@ -69,6 +69,6 @@ h2 {
     margin-bottom: 0.5em; /* 减小段落底部间距 */
 }
 h3 {
-    margin-top: 0px;
-    margin-bottom: 1em;
+    margin-top: 2px;
+    margin-bottom: 0.5em;
 }

@@ -212,7 +212,7 @@ class VizzyMethod extends HTMLElement
         switch (type) 
         {
             case 'mun':
-                img_.src = ".VizzyForWeb/TypeTag_num.png";
+                img_.src = "../../include/VizzyForWeb/TypeTag_num.png";
                 img_.style.width = "20px";
                 img_.style.height = "20px";
                 img_.style.marginLeft       = '5px';
@@ -220,7 +220,7 @@ class VizzyMethod extends HTMLElement
             case 'tex':
                 break;
             case 'vec':
-                img_.src = ".VizzyForWeb/TypeTag_vec.png";
+                img_.src = "../../include/VizzyForWeb/TypeTag_vec.png";
                 img_.style.width = "20px";
                 img_.style.height = "20px";
                 img_.style.marginLeft       = '5px';
