@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh">
+<script type="module" src="../include/SR2VZnote.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../include/SR2VZnote.css">
+    <title>老狗的RS2文档</title>
+</head>
+<body>
+
+    <lf-catalogue></lf-catalogue>
+
+
+
+
+
+    <lf-content>
+
+        <h1>for ( ) from ( ) to ( ) dy ( )</h1>
+
+        <vizzy-div>
+            <vizzy-loopheader>
+                <vizzy-text>for</vizzy-text>
+                <vizzy-parameter>
+                    <vizzy-text>i</vizzy-text>
+                </vizzy-parameter>
+                <vizzy-text>from</vizzy-text>
+                <vizzy-elliptical>
+                    <vizzy-text>1</vizzy-text>
+                </vizzy-elliptical>
+                <vizzy-text>to</vizzy-text>
+                <vizzy-elliptical>
+                    <vizzy-text>10</vizzy-text>
+                </vizzy-elliptical>
+                <vizzy-text>by</vizzy-text>
+                <vizzy-elliptical>
+                    <vizzy-text>1</vizzy-text>
+                </vizzy-elliptical>
+            </vizzy-loopheader>
+            <vizzy-loopbody>
+            </vizzy-loopbody>
+        </vizzy-div>
+        
+        <p>从第"..from().."参数开始通过yb参数直到to参数，并将每次的数赋值给黄色的(i)，每次赋值的时候会进入一次循环，达到to参数后会跳出次循环</p>
+        <h2>提示</h2>
+        <p>(i)不会超过to后面的数，即使最后一次计算会超出to后面的数，(i)最终只会停留在to</p>
+        <h2>示例</h2>
+        <p>打印从5到0的倒计时并激活第一阶段</p>
+        <vizzy-div>
+            <vizzy-event>
+                <vizzy-text>on start</vizzy-text>
+            </vizzy-event>
+            <vizzy-loopheader>
+                <vizzy-text>for</vizzy-text>
+                <vizzy-parameter>
+                    <vizzy-text>i</vizzy-text>
+                </vizzy-parameter>
+                <vizzy-text>from</vizzy-text>
+                <vizzy-elliptical>
+                    <vizzy-text>5</vizzy-text>
+                </vizzy-elliptical>
+                <vizzy-text>to</vizzy-text>
+                <vizzy-elliptical>
+                    <vizzy-text>0</vizzy-text>
+                </vizzy-elliptical>
+                <vizzy-text>by</vizzy-text>
+                <vizzy-elliptical>
+                    <vizzy-text>-1</vizzy-text>
+                </vizzy-elliptical>
+            </vizzy-loopheader>
+            <vizzy-loopbody>
+                <vizzy-instruction>
+                    <vizzy-text>display</vizzy-text>
+                    <vizzy-parameter>
+                        <vizzy-text>i</vizzy-text>
+                    </vizzy-parameter>
+                </vizzy-instruction>
+                <vizzy-instruction>
+                    <vizzy-text>wait</vizzy-text>
+                    <vizzy-elliptical>
+                        <vizzy-text>1</vizzy-text>
+                    </vizzy-elliptical>
+                    <vizzy-text>seconds</vizzy-text>
+                </vizzy-instruction>
+            </vizzy-loopbody>
+            <vizzy-trigger>
+                <vizzy-text>activate stage</vizzy-text>
+            </vizzy-trigger>
+        </vizzy-div>
+        <p>不难注意到这个代码事实上倒数到了0再激活的阶段，这是这个组建的特性</p>
+        <h2>注意</h2>
+        <p>数值不能存在明显错误，如from参数为1通过by参数-1永远无法达到10</p>
+            <vizzy-div>
+                <vizzy-loopheader>
+                    <vizzy-text>for</vizzy-text>
+                    <vizzy-parameter>
+                        <vizzy-text>i</vizzy-text>
+                    </vizzy-parameter>
+                    <vizzy-text>from</vizzy-text>
+                    <vizzy-elliptical>
+                        <vizzy-text>1</vizzy-text>
+                    </vizzy-elliptical>
+                    <vizzy-text>to</vizzy-text>
+                    <vizzy-elliptical>
+                        <vizzy-text>10</vizzy-text>
+                    </vizzy-elliptical>
+                    <vizzy-text>by</vizzy-text>
+                    <vizzy-elliptical>
+                        <vizzy-text>-1</vizzy-text>
+                    </vizzy-elliptical>
+                </vizzy-loopheader>
+                <vizzy-loopbody>
+                </vizzy-loopbody>
+            </vizzy-div>
+        <p>这时这里不会无限循环，会阻塞，一次也不运行,会在logl里抛出一个错误</p>
+    </lf-content>
+</body>
+</html>

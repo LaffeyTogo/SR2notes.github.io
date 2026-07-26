@@ -30,7 +30,7 @@ class LfCatalogue extends HTMLElement
                     return;
         
             
-                if(node.children)
+                if(node.children && node.children.length > 0)
                 {
                     if(this._opened.has(id))
                         this._opened.delete(id);

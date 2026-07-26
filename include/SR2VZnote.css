@@ -15,8 +15,8 @@ lf-content
 {
     box-sizing: border-box;
     margin: 2em 0 0 2em;
-    padding-right: clamp(1em, 20%, 20%);
-    padding-left: clamp(1em, 20%, 20%);
+    padding-right: clamp(1em, 10%, 25%);
+    padding-left: clamp(1em, 10%, 25%);
     padding-top: 0em;
     padding-bottom: 0em;
     width: calc(100vw - 2em);
@@ -58,11 +58,15 @@ svg {
 p {
     text-indent: 2em; 
     margin-top: 0px;  
-    margin-bottom: 1em; 
+    margin-bottom: 0em; 
 }
 h1 {
-    margin-top: 0px;  /* 减小段落顶部间距 */
+    margin-top: 1em;  /* 减小段落顶部间距 */
     margin-bottom: 1em; /* 减小段落底部间距 */
+}
+h2 {
+    margin-top: 2em;  /* 减小段落顶部间距 */
+    margin-bottom: 0.5em; /* 减小段落底部间距 */
 }
 h3 {
     margin-top: 0px;

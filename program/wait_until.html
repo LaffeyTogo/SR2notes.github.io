@@ -17,19 +17,19 @@
 
     <lf-content>
         <div class="Section">
-            <h1>wait（）seconds</h1>
+            <h1>wait () until</h1>
             <div class="unit" style="margin-top: 0; margin-bottom: 0;">
                 <vizzy-div>
                     <vizzy-instruction>
-                        <vizzy-text>wait</vizzy-text>
-                        <vizzy-elliptical>
-                            <vizzy-text>0</vizzy-text>
-                        </vizzy-elliptical>
-                        <vizzy-text>seconds</vizzy-text>
+                        <vizzy-text>wait until</vizzy-text>
+                        <vizzy-octagon>
+                            <vizzy-text></vizzy-text>
+                        </vizzy-octagon>
                     </vizzy-instruction>
                 </vizzy-div>               
-                <p>等待一秒并非现实世界的一秒，这存在一点误差，受是设备刷新帧率影响而产生的，并不大但不可忽视，在时空扭矩中会发生极大错误</p> 
-                <p>如图，在wait（）seaonds上面的程序片段运行完毕后等待（）秒，再开始运行下一个程序片段，如果上面的程序没有运行则无效</p>  
+                <p>等待直到菱形方框内执行或达成则开始运下一行程序</p>
+                <p>例：wait until 〈AGL≦5000〉意思就是等待直到距地面高度小于5000m运行下一步</p>
+                <p>注：如果未达成wait until〈〉里面的条件后面的程序是无法执行的，即使后面的判定是达成的</p>
             </div>
         </div>
     </lf-content>
