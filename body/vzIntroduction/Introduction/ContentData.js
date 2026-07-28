@@ -1,20 +1,5 @@
-<!DOCTYPE html>
-<html lang="zh">
-<script type="module" src="../../include/SR2VZnote.js"></script>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../include/SR2VZnote.css">
-    <title>老狗的RS2文档</title>
-</head>
-<body>
-
-    <lf-catalogue></lf-catalogue>
-
-
-
-
-    <lf-content>
+export const ContentData = `
+    
         <div style="margin-bottom: 2em;">
             <p>Vizzy > 简介</p>
         </div>
@@ -81,7 +66,4 @@
                 </vizzy-varbles>
             </vizzy-operators>
         </vizzy-div>
-        
-    </lf-content>
-</body>
-</html>
+`;

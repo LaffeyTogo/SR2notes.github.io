@@ -21,16 +21,6 @@ class vizzyLoopheader extends HTMLElement
         this.style.paddingTop       = '0px';
         this.style.paddingBottom    = '5px';
 
-
-        if (this.parentNode.firstElementChild === this) 
-        {
-            this.style.marginTop    ='5px';
-        } 
-        else 
-        {
-            this.style.marginTop    = '-5px';
-        }
-
         //画背景 创建 SVG 和图像  
         const SVG_ = document.createElementNS("http://www.w3.org/2000/svg", "svg");
         SVG_.style.position = "absolute";
@@ -102,6 +92,8 @@ class vizzyLoopbody extends HTMLElement
         this.style.paddingLeft      = '8px';
         this.style.paddingTop       = '0px';
         this.style.paddingBottom    = '13px';
+        this.style.marginBottom    = '-5px';
+
         if (this.parentNode.firstElementChild === this) 
         {
             this.style.marginTop    ='5px';

@@ -7,7 +7,7 @@ export const Catalogue =
         [
             {
                 id: 1010,
-                href:"../vzIntroduction/Introduction.html",
+                path:"../body/vzIntroduction/Introduction/",
                 title: "介绍"
             }
         ]
@@ -25,28 +25,33 @@ export const Catalogue =
                 [
                     {
                         id: 201010,
-                        href:"../program/wait.html",
+                        path:"../body/program/wait_seconds/",
                         title: "wait ( ) seaonds",
                     },
                     {
                         id: 201020,
-                        href:"../program/wait_until.html",
+                        path:"../body/program/wait_until/",
                         title: "wait until〈 〉"
                     },
                     {
                         id: 201030,
-                        href:"../program/repeat.html",
+                        path:"../body/program/repeat/",
                         title: "repeat ( )"
                     },
                     {
                         id: 201040,
-                        href:"../program/while.html",
+                        path:"../body/program/while/",
                         title: "while〈 〉"
                     }, 
                     {
                         id: 201050,
-                        href:"../program/for_from_to_dy.html",
-                        title: "for ( ) from ( ) to ( ) dy ( )"
+                        path:"../body/program/for_from_to_by/",
+                        title: "for ( ) from ( ) to ( ) by ( )"
+                    }, 
+                    {
+                        id: 201060,
+                        path:"../body/program/if_then/",
+                        title: "if ( ) then"
                     }, 
                 ]
             },
@@ -64,7 +69,7 @@ export const Catalogue =
         [
             {
                 id: 3010,
-                href:"../program/wait.html",
+                path:"../program/wait.html",
                 title: "wait ( ) seaonds"
             }
         ]
@@ -76,7 +81,7 @@ export const Catalogue =
         [
             {
                 id: 4010,
-                href:"../example/PID_Hover.html",
+                path:"../body/example/PID_Hover/",
                 title: "PID实现火箭悬停"
             }
         ]
@@ -88,7 +93,7 @@ export const Catalogue =
         [
             {
                 id: 5010,
-                href:"../program/wait.html",
+                path:"../program/wait.html",
                 title: "wait ( ) seaonds"
             }
         ]

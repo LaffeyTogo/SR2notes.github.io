@@ -1,22 +1,5 @@
-<!DOCTYPE html>
-<html lang="zh">
-<script type="module" src="../../include/SR2VZnote.js"></script>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../include/SR2VZnote.css">
-    <title>老狗的RS2文档</title>
-</head>
-<body>
 
-    <lf-catalogue></lf-catalogue>
-
-
-
-
-
-    <lf-content>
-
+export const ContentData = `
 
         <h1>用前馈补偿PD实现火箭悬停</h1>
    
@@ -287,6 +270,4 @@
         <h3>固定误差局限性</h3>
         <p>这个示例中之所以采用前馈误差pd控制是因为误差的来源极度明确火箭的重力，甚至可以直接表达出来，所以我们采用的前馈误差，即在“事前就反馈误差”</p>
         <p>比如控制飞机的俯仰角，这时飞机的静态俯冲力矩不是一个好求到的东西，而且根飞机的剩余油料，飞行速度都有关系，这时我们需要用到的是”PID“控制</p>
-        </lf-content>
-</body>
-</html>
+`;

@@ -1,22 +1,5 @@
-<!DOCTYPE html>
-<html lang="zh">
-<script type="module" src="../../include/SR2VZnote.js"></script>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../include/SR2VZnote.css">
-    <title>老狗的RS2文档</title>
-</head>
-<body>
-
-    <lf-catalogue></lf-catalogue>
-
-
-
-
-
-    <lf-content>
-        <div class="Section">
+export const ContentData = `
+    <div class="Section">
             <h1>wait () until</h1>
             <div class="unit" style="margin-top: 0; margin-bottom: 0;">
                 <vizzy-div>
@@ -32,6 +15,4 @@
                 <p>注：如果未达成wait until〈〉里面的条件后面的程序是无法执行的，即使后面的判定是达成的</p>
             </div>
         </div>
-    </lf-content>
-</body>
-</html>
+`;

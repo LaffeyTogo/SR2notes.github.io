@@ -1,23 +1,5 @@
-<!DOCTYPE html>
-<html lang="zh">
-<script type="module" src="../../include/SR2VZnote.js"></script>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../include/SR2VZnote.css">
-    <title>老狗的RS2文档</title>
-</head>
-<body>
-
-    <lf-catalogue></lf-catalogue>
-
-
-
-
-
-    <lf-content>
-
-        <h1>repeat ( )</h1>
+export const ContentData = `
+    <h1>repeat ( )</h1>
 
         <vizzy-div>
             <vizzy-loopheader>
@@ -31,6 +13,4 @@
         </vizzy-div>
         
         <p>可以在（）里填入需要重复的次数，此程序所包含的程序将会运行（）次，重复完成后会自动跳出循环</p>
-    </lf-content>
-</body>
-</html>
+`;

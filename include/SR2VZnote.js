@@ -1,8 +1,34 @@
 import "./VizzyForWeb/SR2VIZZY.js"
 import "./LfCatalogue.js"
 import "./LfContent.js";
+import "./LfEntryTemplate.js";
 
+import { Page } from "./LfEntryTemplate.js";
 import { Catalogue } from "../body/catalogue-data.js";
+
+let page = new Page();
+
+
+
+
+const contentURL = new URL("./body/program/while/ContentData.js", location.href);
+const { ContentData } = await import(contentURL.href);
+page.SetContent(ContentData);
+
+
+
 const menu = document.querySelector("lf-catalogue");
 menu.data = Catalogue;
 
+
+document.addEventListener("pagechange", async (e) =>
+{
+;
+    const path = e.detail.path;
+
+
+    const { ContentData } =
+        await import(`${path}ContentData.js`);
+
+    page.SetContent(ContentData);
+});

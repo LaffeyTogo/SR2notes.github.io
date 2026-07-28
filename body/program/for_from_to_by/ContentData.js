@@ -1,22 +1,4 @@
-<!DOCTYPE html>
-<html lang="zh">
-<script type="module" src="../../include/SR2VZnote.js"></script>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../include/SR2VZnote.css">
-    <title>老狗的RS2文档</title>
-</head>
-<body>
-
-    <lf-catalogue></lf-catalogue>
-
-
-
-
-
-    <lf-content>
-
+export const ContentData = `
         <h1>for ( ) from ( ) to ( ) dy ( )</h1>
 
         <vizzy-div>
@@ -41,7 +23,6 @@
             <vizzy-loopbody>
             </vizzy-loopbody>
         </vizzy-div>
-        
         <p>从第"..from().."参数开始通过yb参数直到to参数，并将每次的数赋值给黄色的(i)，每次赋值的时候会进入一次循环，达到to参数后会跳出次循环</p>
         <h2>提示</h2>
         <p>(i)不会超过to后面的数，即使最后一次计算会超出to后面的数，(i)最终只会停留在to</p>
@@ -114,6 +95,4 @@
                 </vizzy-loopbody>
             </vizzy-div>
         <p>这时这里不会无限循环，会阻塞，一次也不运行,会在logl里抛出一个错误</p>
-    </lf-content>
-</body>
-</html>
+`;

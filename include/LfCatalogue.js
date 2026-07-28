@@ -42,7 +42,16 @@ class LfCatalogue extends HTMLElement
                 }
                 else
                 {
-                    location.href = node.href;
+                    this.dispatchEvent(
+                        new CustomEvent("pagechange", {
+                            bubbles: true,
+                            composed: true,
+                            detail: {
+                                path: node.path,
+                                node: node
+                            }
+                        })
+                    );
                 }
             
                 this.Render();

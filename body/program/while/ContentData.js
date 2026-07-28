@@ -1,22 +1,5 @@
-<!DOCTYPE html>
-<html lang="zh">
-<script type="module" src="../../include/SR2VZnote.js"></script>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../include/SR2VZnote.css">
-    <title>老狗的RS2文档</title>
-</head>
-<body>
-
-    <lf-catalogue></lf-catalogue>
-
-
-
-
-
-    <lf-content>
-
+export const ContentData = `
+    
         <h1>while</h1>
 
         <vizzy-div>
@@ -32,7 +15,5 @@
         
         <p>当〈〉为真命题时无限循环运行所包含的程序，直到〈〉内不再为真命题才会跳出，如〈〉为否命题则直接跳过此程序和所有包含的子程序直接运行下面的程序</p>
         <h2>提示</h2>
-        <p>while 〈true〉可以实现无条件无限循环，强行打断循环需要brake</p>
-    </lf-content>
-</body>
-</html>
+        <p>while 〈true〉可以实现无条件无限循环，强行打断循环需要brake</p> 
+`;
