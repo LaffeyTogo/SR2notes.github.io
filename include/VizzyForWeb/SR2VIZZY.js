@@ -14,10 +14,12 @@ class Vizzy extends HTMLElement
 
     connectedCallback()
     {
-        this.style.paddingTop = "10px"
-        this.style.paddingBottom = "10px"
-        this.style.display = 'inline-flex'
-        this.style.flexDirection ="column"
+        this.style.paddingTop       = "10px"
+        this.style.paddingBottom    = "10px"
+        this.style.display          = 'inline-flex'
+        this.style.flexDirection    ="column"
+        this.style.overflowX        = 'auto'
+        this.style.maxWidth         = '100%'
     }
 }
 
