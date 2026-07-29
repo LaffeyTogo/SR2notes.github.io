@@ -14,6 +14,11 @@ class LfCatalogue extends HTMLElement
 
     connectedCallback()
     {
+        
+        this.style.alignSelf = 'flex-start';
+        this.style.position = 'sticky'
+        Object.assign(this.style,{top:"0"});
+        
         this.LoadState();
         
         this.addEventListener
@@ -64,6 +69,14 @@ class LfCatalogue extends HTMLElement
     }
 
 
+    async SetData(URL_)
+    {
+        const module = await import(URL_);
+
+        this._data = module.Catalogue;
+
+        this.Render();
+    }
 
 
 
@@ -163,15 +176,6 @@ class LfCatalogue extends HTMLElement
         }
     }
 
-
-
-
-
-    set data(value)
-    {
-        this._data = value;
-        this.Render();
-    }
 
 
 

@@ -77,8 +77,8 @@ class VizzyParameter extends VizzyVarbles
         const rect_ = document.createElementNS("http://www.w3.org/2000/svg", "rect");
         rect_.setAttribute("rx", "14");
         rect_.setAttribute("ry", "14");
-        rect_.setAttribute("fill", "#DE9230");
-        rect_.setAttribute("stroke", "#9D763D");
+        rect_.setAttribute("fill", "#F2A90D");
+        rect_.setAttribute("stroke", "#CC8A00");
 
         return rect_;
     }
@@ -110,6 +110,7 @@ class VizzyDiscriminant extends HTMLElement
         this.style.marginRight      = '5px';
         this.style.paddingLeft      = '5px';
         this.style.paddingRight     = '5px';
+
 
         
         if (this.parentNode.tagName === "VIZZY-INSTRUCTION") 

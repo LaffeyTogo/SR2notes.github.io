@@ -3,7 +3,7 @@ body, html {
     margin: 0;
     padding: 0;
     display:flex;
-    overflow-x: hidden;
+    flex-direction: column;
 }
 
 
@@ -14,36 +14,39 @@ body, html {
 lf-content
 {
     box-sizing: border-box;
-    margin: 2em 0 0 2em;
     padding-right: clamp(1em, 10%, 25%);
     padding-left: clamp(1em, 10%, 25%);
     padding-top: 0em;
-    padding-bottom: 0em;
-    width: calc(100vw - 2em);
-    flex: 1;
+    padding-bottom: 3em;
+    
+    min-width: 0;
+    width: auto;
 }
-lf-content[tight]
-{
-    margin: 2em 0 0 20em;
-    width: calc(100vw - 20em);
-}
-
-
 
 
 
 lf-catalogue
 {
-    position: fixed;
     left:0;
-    top:2em;
     width:2em;
     height:100vh;
     background-color: rgb(245, 245, 245);
 }
 lf-catalogue[open]
 {
-    width:20em;
+    min-width:20em;
+}
+
+
+lf-contributor
+{
+    background-color: rgb(245, 245, 220);
+    box-sizing: border-box;
+    padding-bottom: 0em;
+    min-width:100%;
+    min-height: 4em;
+    flex: 1;
+
 }
 
 

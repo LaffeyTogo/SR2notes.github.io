@@ -20,6 +20,7 @@ class Vizzy extends HTMLElement
         this.style.flexDirection    ="column"
         this.style.overflowX        = 'auto'
         this.style.maxWidth         = '100%'
+        this.style.paddingLeft      = '2em'
     }
 }
 
