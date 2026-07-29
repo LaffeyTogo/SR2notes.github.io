@@ -41,16 +41,16 @@ export const ContentData = `
         <vizzy-loopheader>
             <vizzy-text>if</vizzy-text>
             <vizzy-operators>
-            <vizzy-information>
-                <vizzy-text>altitude</vizzy-text>
-                <vizzy-method type="mun">
-                    <vizzy-text>AGL</vizzy-text>
-                </vizzy-method>
-            </vizzy-information>
-            <vizzy-text><=</vizzy-text>
-            <vizzy-elliptical>
-                <vizzy-text>1000</vizzy-text>
-            </vizzy-elliptical>
+                <vizzy-information>
+                    <vizzy-text>altitude</vizzy-text>
+                    <vizzy-method type="mun">
+                        <vizzy-text>AGL</vizzy-text>
+                    </vizzy-method>
+                </vizzy-information>
+                <vizzy-text><=</vizzy-text>
+                <vizzy-elliptical>
+                    <vizzy-text>1000</vizzy-text>
+                </vizzy-elliptical>
             </vizzy-operators>
             <vizzy-text>then</vizzy-text>
         </vizzy-loopheader>

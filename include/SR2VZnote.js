@@ -11,7 +11,7 @@ let page = new Page();
 
 
 
-const contentURL = new URL("./body/program/while/ContentData.js", location.href);
+const contentURL = new URL("./body/vzIntroduction/Introduction/ContentData.js", location.href);
 const { ContentData } = await import(contentURL.href);
 page.SetContent(ContentData);
 
