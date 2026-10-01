@@ -26,3 +26,32 @@
   /.....                      
 
 ```
+# Vizzy组件
+## 接口
+地址：https://laffeytogo.github.io/SR2notes.github.io/include/VizzyForWeb/SR2IZZY.js
+调用方法：
+```
+<script type="module"
+  src="https://laffeytogo.github.io/SR2notes.github.io/include/VizzyForWeb/SR2IZZY.js">
+</script>
+```
+## 使用示例
+```
+<vizzy-div>
+  <vizzy-loopheader>
+    <vizzy-text>if</vizzy-text>
+    <vizzy-operators>
+    <vizzy-varbles>
+      <vizzy-text>Mode</vizzy-text>
+    </vizzy-varbles>
+    <vizzy-text>=</vizzy-text>
+    <vizzy-elliptical>
+      <vizzy-text>1</vizzy-text>
+    </vizzy-elliptical>
+    </vizzy-operators>
+    <vizzy-text>then</vizzy-text>
+  </vizzy-loopheader>
+  <vizzy-loopbody>
+  </vizzy-loopbody>
+</vizzy-div>
+```
