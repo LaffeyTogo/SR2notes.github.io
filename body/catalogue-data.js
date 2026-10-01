@@ -1,205 +1,141 @@
-export const Catalogue =
-[
+export const Catalogue = [
     {
-        id: 1000,
-        title: "基本介绍",
-        children:
-        [
+        "id": "body/example",
+        "title": "example",
+        "children": [
             {
-                id: 1010,
-                path:"../body/vzIntroduction/Introduction/",
-                title: "介绍"
+                "id": "body/example/PID_Hover",
+                "title": "PID_Hover",
+                "path": "../body/example/PID_Hover/"
             }
         ]
     },
     {
-        id: 2000,
-        title: "全部翻译及注释",
-        children:
-        [
-      
+        "id": "body/example Template",
+        "title": "example Template",
+        "path": "../body/example Template/"
+    },
+    {
+        "id": "body/program",
+        "title": "program",
+        "children": [
             {
-                id: 2010,
-                title: "程序流程 (Program flow)",
-                children:
-                [
+                "id": "body/program/break",
+                "title": "break",
+                "path": "../body/program/break/"
+            },
+            {
+                "id": "body/program/display",
+                "title": "display",
+                "path": "../body/program/display/"
+            },
+            {
+                "id": "body/program/else",
+                "title": "else",
+                "path": "../body/program/else/"
+            },
+            {
+                "id": "body/program/else_if_then",
+                "title": "else_if_then",
+                "path": "../body/program/else_if_then/"
+            },
+            {
+                "id": "body/program/event",
+                "title": "event",
+                "children": [
                     {
-                        id: 201010,
-                        path:"../body/program/wait_seconds/",
-                        title: "wait ( ) seaonds",
+                        "id": "body/program/event/broadcast_with_data",
+                        "title": "broadcast_with_data",
+                        "path": "../body/program/event/broadcast_with_data/"
                     },
                     {
-                        id: 201020,
-                        path:"../body/program/wait_until/",
-                        title: "wait until〈 〉"
+                        "id": "body/program/event/broadcast_with_data_craft",
+                        "title": "broadcast_with_data_craft",
+                        "path": "../body/program/event/broadcast_with_data_craft/"
                     },
                     {
-                        id: 201030,
-                        path:"../body/program/repeat/",
-                        title: "repeat ( )"
+                        "id": "body/program/event/broadcast_with_data_to nearby crafts",
+                        "title": "broadcast_with_data_to nearby crafts",
+                        "path": "../body/program/event/broadcast_with_data_to nearby crafts/"
                     },
                     {
-                        id: 201040,
-                        path:"../body/program/while/",
-                        title: "while〈 〉"
-                    }, 
-                    {
-                        id: 201050,
-                        path:"../body/program/for_from_to_by/",
-                        title: "for ( ) from ( ) to ( ) by ( )"
-                    }, 
-                    {
-                        id: 201060,
-                        path:"../body/program/if_then/",
-                        title: "if ( ) then"
+                        "id": "body/program/event/on_and_docked",
+                        "title": "on_and_docked",
+                        "path": "../body/program/event/on_and_docked/"
                     },
                     {
-                        id: 201070,
-                        path:"../body/program/else_if_then/",
-                        title: "else if ( ) then"
-                    }, 
-                    {
-                        id: 201080,
-                        path:"../body/program/else/",
-                        title: "else"
+                        "id": "body/program/event/on_collide_with_at_and",
+                        "title": "on_collide_with_at_and",
+                        "path": "../body/program/event/on_collide_with_at_and/"
                     },
                     {
-                        id: 201090,
-                        path:"../body/program/display/",
-                        title: "display"
+                        "id": "body/program/event/on_enter_SOI",
+                        "title": "on_enter_SOI",
+                        "path": "../body/program/event/on_enter_SOI/"
                     },
                     {
-                        id: 201001,
-                        path:"../body/program/locallog/",
-                        title: "locallog"
+                        "id": "body/program/event/on_exploded",
+                        "title": "on_exploded",
+                        "path": "../body/program/event/on_exploded/"
                     },
                     {
-                        id: 201021,
-                        path:"../body/program/break/",
-                        title: "break"
+                        "id": "body/program/event/on_start",
+                        "title": "on_start",
+                        "path": "../body/program/event/on_start/"
                     },
+                    {
+                        "id": "body/program/event/receive_with",
+                        "title": "receive_with",
+                        "path": "../body/program/event/receive_with/"
+                    }
                 ]
             },
             {
-                id: 2020,
-                title: "运算符 (Operators)",
+                "id": "body/program/for_from_to_by",
+                "title": "for_from_to_by",
+                "path": "../body/program/for_from_to_by/"
             },
             {
-                id: 2030,
-                title: "飞船命令 (Craft Instructions)",
+                "id": "body/program/if_then",
+                "title": "if_then",
+                "path": "../body/program/if_then/"
             },
             {
-                id: 2040,
-                title: "飞船信息 (Craft Information)",
+                "id": "body/program/locallog",
+                "title": "locallog",
+                "path": "../body/program/locallog/"
             },
             {
-                id: 2050,
-                title: "事件 (Events)",
-                children:
-                [
-                    {
-                        id: 205010,
-                        path:"../body/program/event/on_start/",
-                        title: "on_start",
-                    },
-                    {
-                        id: 205020,
-                        path:"../body/program/event/on_collide_with_at_and/",
-                        title: "on_collide_with_at_and",
-                    },
-                    {
-                        id: 205030,
-                        path:"../body/program/event/on_exploded/",
-                        title: "on_exploded",
-                    },
-                    {
-                        id: 205040,
-                        path:"../body/program/event/on_and_docked/",
-                        title: "on_and_docked",
-                    },
-                    {
-                        id: 205050,
-                        path:"../body/program/event/on_enter_SOI/",
-                        title: "on_enter_SOI",
-                    },
-                    {
-                        id: 205060,
-                        path:"../body/program/event/receive_with/",
-                        title: "receive_with",
-                    },
-                    {
-                        id: 205070,
-                        path:"../body/program/event/broadcast_with_data/",
-                        title: "broadcast_with_data",
-                    },
-                    {
-                        id: 205080,
-                        path:"../body/program/event/broadcast_with_data_craft/",
-                        title: "broadcast_with_data_craft",
-                    },
-                    {
-                        id: 205090,
-                        path:"../body/program/event/broadcast_with_data_to nearby crafts/",
-                        title: "broadcast_with_data_to nearby crafts",
-                    },
-                ]
+                "id": "body/program/repeat",
+                "title": "repeat",
+                "path": "../body/program/repeat/"
             },
             {
-                id: 2060,
-                title: "变量 (Variables)",
+                "id": "body/program/wait_seconds",
+                "title": "wait_seconds",
+                "path": "../body/program/wait_seconds/"
             },
             {
-                id: 2070,
-                title: "列表 (Lists)",
+                "id": "body/program/wait_until",
+                "title": "wait_until",
+                "path": "../body/program/wait_until/"
             },
             {
-                id: 2080,
-                title: "自定义表达式 (Custom Expressions)",
-            },
-            {
-                id: 2090,
-                title: "自定义指令 (Custom Instructions)",
-            },
-            {
-                id: 2001,
-                title: "多功能显示器 (multi-function display)",
-            },
-        ]
-    },
-    {
-        id: 3000,
-        title: "FunkTree",
-        children:
-        [
-            {
-                id: 3010,
-                path:"../program/wait.html",
-                title: "wait ( ) seaonds"
+                "id": "body/program/while",
+                "title": "while",
+                "path": "../body/program/while/"
             }
         ]
     },
     {
-        id: 4000,
-        title: "程序实例",
-        children:
-        [
+        "id": "body/vzIntroduction",
+        "title": "vzIntroduction",
+        "children": [
             {
-                id: 4010,
-                path:"../body/example/PID_Hover/",
-                title: "PID实现火箭悬停"
-            }
-        ]
-    },
-    {
-        id: 5000,
-        title: "其他有关内容",
-        children:
-        [
-            {
-                id: 5010,
-                path:"../program/wait.html",
-                title: "wait ( ) seaonds"
+                "id": "body/vzIntroduction/Introduction",
+                "title": "Introduction",
+                "path": "../body/vzIntroduction/Introduction/"
             }
         ]
     }
-]
+];

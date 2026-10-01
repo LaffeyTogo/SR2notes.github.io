@@ -27,7 +27,7 @@ class LfCatalogue extends HTMLElement
                 if(e.target.tagName != "SPAN")
                     return;
             
-                const id = Number(e.target.dataset.id);
+                const id = e.target.dataset.id;
             
                 const node = this.FindNode(this._data, id);
             
