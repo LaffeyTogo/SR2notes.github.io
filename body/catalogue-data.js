@@ -20,26 +20,6 @@ export const Catalogue = [
         "title": "program",
         "children": [
             {
-                "id": "body/program/break",
-                "title": "break",
-                "path": "../body/program/break/"
-            },
-            {
-                "id": "body/program/display",
-                "title": "display",
-                "path": "../body/program/display/"
-            },
-            {
-                "id": "body/program/else",
-                "title": "else",
-                "path": "../body/program/else/"
-            },
-            {
-                "id": "body/program/else_if_then",
-                "title": "else_if_then",
-                "path": "../body/program/else_if_then/"
-            },
-            {
                 "id": "body/program/event",
                 "title": "event",
                 "children": [
@@ -91,39 +71,65 @@ export const Catalogue = [
                 ]
             },
             {
-                "id": "body/program/for_from_to_by",
-                "title": "for_from_to_by",
-                "path": "../body/program/for_from_to_by/"
-            },
-            {
-                "id": "body/program/if_then",
-                "title": "if_then",
-                "path": "../body/program/if_then/"
-            },
-            {
-                "id": "body/program/locallog",
-                "title": "locallog",
-                "path": "../body/program/locallog/"
-            },
-            {
-                "id": "body/program/repeat",
-                "title": "repeat",
-                "path": "../body/program/repeat/"
-            },
-            {
-                "id": "body/program/wait_seconds",
-                "title": "wait_seconds",
-                "path": "../body/program/wait_seconds/"
-            },
-            {
-                "id": "body/program/wait_until",
-                "title": "wait_until",
-                "path": "../body/program/wait_until/"
-            },
-            {
-                "id": "body/program/while",
-                "title": "while",
-                "path": "../body/program/while/"
+                "id": "body/program/program flow",
+                "title": "program flow",
+                "children": [
+                    {
+                        "id": "body/program/program flow/break",
+                        "title": "break",
+                        "path": "../body/program/program flow/break/"
+                    },
+                    {
+                        "id": "body/program/program flow/display",
+                        "title": "display",
+                        "path": "../body/program/program flow/display/"
+                    },
+                    {
+                        "id": "body/program/program flow/else",
+                        "title": "else",
+                        "path": "../body/program/program flow/else/"
+                    },
+                    {
+                        "id": "body/program/program flow/else_if_then",
+                        "title": "else_if_then",
+                        "path": "../body/program/program flow/else_if_then/"
+                    },
+                    {
+                        "id": "body/program/program flow/for_from_to_by",
+                        "title": "for_from_to_by",
+                        "path": "../body/program/program flow/for_from_to_by/"
+                    },
+                    {
+                        "id": "body/program/program flow/if_then",
+                        "title": "if_then",
+                        "path": "../body/program/program flow/if_then/"
+                    },
+                    {
+                        "id": "body/program/program flow/locallog",
+                        "title": "locallog",
+                        "path": "../body/program/program flow/locallog/"
+                    },
+                    {
+                        "id": "body/program/program flow/repeat",
+                        "title": "repeat",
+                        "path": "../body/program/program flow/repeat/"
+                    },
+                    {
+                        "id": "body/program/program flow/wait_seconds",
+                        "title": "wait_seconds",
+                        "path": "../body/program/program flow/wait_seconds/"
+                    },
+                    {
+                        "id": "body/program/program flow/wait_until",
+                        "title": "wait_until",
+                        "path": "../body/program/program flow/wait_until/"
+                    },
+                    {
+                        "id": "body/program/program flow/while",
+                        "title": "while",
+                        "path": "../body/program/program flow/while/"
+                    }
+                ]
             }
         ]
     },
