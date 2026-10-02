@@ -15,10 +15,6 @@ class LfCatalogue extends HTMLElement
     connectedCallback()
     {
         
-        this.style.alignSelf = 'flex-start';
-        this.style.position = 'sticky'
-        Object.assign(this.style,{top:"0"});
-        
         this.LoadState();
         
         this.addEventListener
@@ -212,6 +208,13 @@ class LfCatalogue extends HTMLElement
     }
 
 
+    GetNode(id)
+    {
+        return this.FindNode(this._data, id);
+    }
+
+
+    
     FindNode(nodes,id)
     {
         for(const node of nodes)

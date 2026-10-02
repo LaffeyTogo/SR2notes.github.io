@@ -10,19 +10,28 @@ let page = new Page();
 
 
 
-const contentURL = new URL("./body/vzIntroduction/Introduction/ContentData.js", location.href);
-const { ContentData } = await import(contentURL.href);
-page.SetContent(ContentData);
+const PAGE_ID_KEY = "current-page-id";
+const DEFAULT_PAGE_ID = "body/vzIntroduction/Introduction";
 
+async function ShowPage(node)
+{
+    const { ContentData } = await import(`${node.path}ContentData.js`);
+    page.SetContent(ContentData);
+}
 
+await page.catalogueReady;
+
+const savedId = localStorage.getItem(PAGE_ID_KEY);
+const node =
+    page.catalogue.GetNode(savedId) ??
+    page.catalogue.GetNode(DEFAULT_PAGE_ID);
+
+await ShowPage(node);
 
 document.addEventListener("pagechange", async (e) =>
 {
-;
-    const path = e.detail.path;
+    const node = e.detail.node;
 
-
-    const { ContentData } = await import(`${path}ContentData.js`);
-
-    page.SetContent(ContentData);
+    localStorage.setItem(PAGE_ID_KEY, node.id);
+    await ShowPage(node);
 });

@@ -32,7 +32,7 @@ export class Page
         );
 
 
-        this.catalogue.SetData('../body/catalogue-data.js')
+       this.catalogueReady = this.catalogue.SetData('../body/catalogue-data.js')
 
 
     }

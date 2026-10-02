@@ -17,10 +17,10 @@ class Vizzy extends HTMLElement
         this.style.paddingTop       = "10px"
         this.style.paddingBottom    = "10px"
         this.style.display          = 'inline-flex'
-        this.style.flexDirection    ="column"
+        this.style.flexDirection    = "column"
         this.style.overflowX        = 'auto'
         this.style.maxWidth         = '100%'
-        this.style.paddingLeft      = '2em'
+       
     }
 }
 

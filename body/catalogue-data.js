@@ -80,6 +80,16 @@ export const Catalogue = [
                         "path": "../body/program/multi-function display/initialize_texture_width_and_height/"
                     },
                     {
+                        "id": "body/program/multi-function display/set texture_pixel_x_y_to",
+                        "title": "set texture_pixel_x_y_to",
+                        "path": "../body/program/multi-function display/set texture_pixel_x_y_to/"
+                    },
+                    {
+                        "id": "body/program/multi-function display/set_gauge_to",
+                        "title": "set_gauge_to",
+                        "path": "../body/program/multi-function display/set_gauge_to/"
+                    },
+                    {
                         "id": "body/program/multi-function display/set_label_alignment_to",
                         "title": "set_label_alignment_to",
                         "path": "../body/program/multi-function display/set_label_alignment_to/"
@@ -88,6 +98,16 @@ export const Catalogue = [
                         "id": "body/program/multi-function display/set_label_to",
                         "title": "set_label_to",
                         "path": "../body/program/multi-function display/set_label_to/"
+                    },
+                    {
+                        "id": "body/program/multi-function display/set_line_to",
+                        "title": "set_line_to",
+                        "path": "../body/program/multi-function display/set_line_to/"
+                    },
+                    {
+                        "id": "body/program/multi-function display/set_sprite_to",
+                        "title": "set_sprite_to",
+                        "path": "../body/program/multi-function display/set_sprite_to/"
                     },
                     {
                         "id": "body/program/multi-function display/set_widget_anchor_to",
