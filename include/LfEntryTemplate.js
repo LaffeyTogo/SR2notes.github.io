@@ -17,9 +17,7 @@ export class Page
         this.contributor    = document.createElement("lf-contributor");
 
         const container = document.createElement("div");
-        container.style.display         = "flex";
-        container.style.flexdirection   = "row";
-        container.style.width           = "100%";
+        container.className             = "page-layout";
 
         
         container.append

@@ -4,11 +4,19 @@ body, html {
     padding: 0;
     display:flex;
     flex-direction: column;
+  min-block-size: 100%;
 }
 
 
 
 
+.page-layout 
+{
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  min-block-size: 100dvh;
+}
 
 
 lf-content
@@ -30,8 +38,12 @@ lf-content > * {
     max-width: 80em;
 }
 
+
 lf-catalogue
 {
+   position: sticky;
+    top: 0;
+    flex: 0 0 auto;
     left:0;
     width:2em;
     height:100vh;
@@ -41,6 +53,50 @@ lf-catalogue[open]
 {
     min-width:20em;
 }
+
+
+
+@media (max-width: 48rem)
+{
+    .page-layout 
+    {
+        flex-direction: column;
+    }
+
+    lf-catalogue 
+    {
+
+    z-index: 10;
+    top: 0;
+    width: 100%;
+    height: auto;
+    }
+
+    lf-catalogue[open] 
+    {
+    width: 100%;
+    }
+
+    lf-catalogue .toggle 
+    {
+    width: 100%;
+    min-height: 2.75rem;
+    text-align: left;
+    }
+
+    lf-catalogue ul 
+    {
+    margin: 0;
+    padding: 0.5rem 1rem 1rem 2rem;
+    }
+
+    lf-content 
+    {
+    width: 100%;
+    padding-inline: 1rem;
+    }
+}
+
 
 
 lf-contributor
@@ -55,10 +111,6 @@ lf-contributor
 }
 
 
-.VizzyWigets
-{
-    /*filter: drop-shadow(3px 3px 2px gray);*/
-}
 p {
     text-indent: 2em; 
     margin-top: 0px;  
@@ -76,6 +128,17 @@ h3 {
     margin-top: 2px;
     margin-bottom: 0.5em;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 table {

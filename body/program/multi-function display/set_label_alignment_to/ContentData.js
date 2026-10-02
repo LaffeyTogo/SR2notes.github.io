@@ -1,63 +1,18 @@
 export const ContentData = `
-    <h1>create［］widget named（）</h1>
+    <h1>set lable () [] alignment to ()</h1>
     <vizzy-div>
-        <vizzy-mfd>
-            <vizzy-text>create</vizzy-text>
-            <vizzy-method type="tex">
-                <vizzy-text>Label</vizzy-text>
-            </vizzy-method>
-            <vizzy-text>widget named</vizzy-text>
-            <vizzy-elliptical>
-                <vizzy-text>name</vizzy-text>
-            </vizzy-elliptical>
-        </vizzy-mfd>
-    </vizzy-div>        
-    <p>这是显示器的核心之一，往后任何我们要定义的小部件都需要先创造它然后在设置它</p> 
-
-
-    <h2>使用方法</h2>
-    <P>创建一个名为TextBox1的组件并移动他到多功能显示器的左上角</P>
-    <vizzy-div>
-        <vizzy-event>
-            <vizzy-text>on start</vizzy-text>
-        </vizzy-event>
-        <vizzy-mfd>
-            <vizzy-text>create</vizzy-text>
-            <vizzy-method type="tex">
-                <vizzy-text>Label</vizzy-text>
-            </vizzy-method>
-            <vizzy-text>widget named</vizzy-text>
-            <vizzy-elliptical>
-                <vizzy-text>TextBox1</vizzy-text>
-            </vizzy-elliptical>
-        </vizzy-mfd>
         <vizzy-mfd>
             <vizzy-text>set lable</vizzy-text>
             <vizzy-elliptical>
-                <vizzy-text>TextBox1</vizzy-text>
+                <vizzy-text>name</vizzy-text>
             </vizzy-elliptical>
+            <vizzy-text>alignment to</vizzy-text>
             <vizzy-method type="tex">
-                <vizzy-text>Text</vizzy-text>
+                <vizzy-text>Center</vizzy-text>
             </vizzy-method>
-            <vizzy-text>to</vizzy-text>
-            <vizzy-elliptical>
-                <vizzy-text>Hello word</vizzy-text>
-            </vizzy-elliptical>
-        </vizzy-mfd>
-        <vizzy-mfd>
-            <vizzy-text>set widget</vizzy-text>
-            <vizzy-elliptical>
-                <vizzy-text>TextBox1</vizzy-text>
-            </vizzy-elliptical>
-            <vizzy-method type="vec">
-                <vizzy-text>Position</vizzy-text>
-            </vizzy-method>
-            <vizzy-text>to</vizzy-text>
-            <vizzy-elliptical>
-                <vizzy-text>-1,1</vizzy-text>
-            </vizzy-elliptical>
         </vizzy-mfd>
     </vizzy-div>
+    <p>设置文本对齐方向</p> 
 
 
     <h2>参数列表</h2>
@@ -74,89 +29,122 @@ export const ContentData = `
                 <td>
                     <vizzy-div>
                         <vizzy-method-blue type="tex">
-                            <vizzy-text>Ellipse</vizzy-text>
+                            <vizzy-text>Left</vizzy-text>
                         </vizzy-method-blue>
                     </vizzy-div>
                 </td>
                 <td>Text</td>
-                <td>圆形</td>
+                <td>左边</td>
             </tr>
             <tr>
                 <td>
                     <vizzy-div>
                         <vizzy-method-blue type="tex">
-                            <vizzy-text>Label</vizzy-text>
+                            <vizzy-text>Center</vizzy-text>
                         </vizzy-method-blue>
                     </vizzy-div>
                 </td>
                 <td>Text</td>
-                <td>文本框，文字标签</td>
+                <td>居中</td>
             </tr>
             <tr>
                 <td>
                     <vizzy-div>
                         <vizzy-method-blue type="tex">
-                            <vizzy-text>Line</vizzy-text>
+                            <vizzy-text>Right</vizzy-text>
                         </vizzy-method-blue>
                     </vizzy-div>
                 </td>
                 <td>Text</td>
-                <td>线段</td>
+                <td>右边</td>
             </tr>
             <tr>
                 <td>
                     <vizzy-div>
                         <vizzy-method-blue type="tex">
-                            <vizzy-text>Radial Gauge</vizzy-text>
+                            <vizzy-text>Center</vizzy-text>
                         </vizzy-method-blue>
                     </vizzy-div>
                 </td>
                 <td>Text</td>
-                <td>仪表板</td>
+                <td>中间</td>
             </tr>
             <tr>
                 <td>
                     <vizzy-div>
                         <vizzy-method-blue type="tex">
-                            <vizzy-text>Rectangle</vizzy-text>
+                            <vizzy-text>Right</vizzy-text>
                         </vizzy-method-blue>
                     </vizzy-div>
                 </td>
                 <td>Text</td>
-                <td>矩形</td>
+                <td>右边</td>
             </tr>
             <tr>
                 <td>
                     <vizzy-div>
                         <vizzy-method-blue type="tex">
-                            <vizzy-text>Rectangle</vizzy-text>
+                            <vizzy-text>Top letf</vizzy-text>
                         </vizzy-method-blue>
                     </vizzy-div>
                 </td>
                 <td>Text</td>
-                <td>纹理，一定大小的矩形像素块</td>
+                <td>左上角</td>
             </tr>
             <tr>
                 <td>
                     <vizzy-div>
                         <vizzy-method-blue type="tex">
-                            <vizzy-text>Navball</vizzy-text>
+                            <vizzy-text>Top center</vizzy-text>
                         </vizzy-method-blue>
                     </vizzy-div>
                 </td>
                 <td>Text</td>
-                <td>导航球</td>
+                <td>上部居中</td>
             </tr>
             <tr>
                 <td>
                     <vizzy-div>
                         <vizzy-method-blue type="tex">
-                            <vizzy-text>Map</vizzy-text>
+                            <vizzy-text>Top right</vizzy-text>
                         </vizzy-method-blue>
                     </vizzy-div>
                 </td>
                 <td>Text</td>
-                <td>地图</td>
+                <td>右上角</td>
+            </tr>
+            <tr>
+                <td>
+                    <vizzy-div>
+                        <vizzy-method-blue type="tex">
+                            <vizzy-text>Bottom left</vizzy-text>
+                        </vizzy-method-blue>
+                    </vizzy-div>
+                </td>
+                <td>Text</td>
+                <td>左下角</td>
+            </tr>
+            <tr>
+                <td>
+                    <vizzy-div>
+                        <vizzy-method-blue type="tex">
+                            <vizzy-text>Bottom center</vizzy-text>
+                        </vizzy-method-blue>
+                    </vizzy-div>
+                </td>
+                <td>Text</td>
+                <td>中下部</td>
+            </tr>
+            <tr>
+                <td>
+                    <vizzy-div>
+                        <vizzy-method-blue type="tex">
+                            <vizzy-text>Bottom Right</vizzy-text>
+                        </vizzy-method-blue>
+                    </vizzy-div>
+                </td>
+                <td>Text</td>
+                <td>右下角</td>
             </tr>
         </tbody>
     </table>

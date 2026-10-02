@@ -1,16 +1,18 @@
 export const ContentData = `
     <h1>set lable () [] to ()</h1>
-    <vizzy-mfd>
-        <vizzy-text>set lable</vizzy-text>
-        <vizzy-elliptical>
-            <vizzy-text>name</vizzy-text>
-        </vizzy-elliptical>
-        <vizzy-method type="tex">
-            <vizzy-text>Text</vizzy-text>
-        </vizzy-method>
-        <vizzy-text>to</vizzy-text>
-        <vizzy-elliptical> </vizzy-elliptical>
-    </vizzy-mfd>
+    <vizzy-div>
+        <vizzy-mfd>
+            <vizzy-text>set lable</vizzy-text>
+            <vizzy-elliptical>
+                <vizzy-text>name</vizzy-text>
+            </vizzy-elliptical>
+            <vizzy-method type="tex">
+                <vizzy-text>Text</vizzy-text>
+            </vizzy-method>
+            <vizzy-text>to</vizzy-text>
+            <vizzy-elliptical> </vizzy-elliptical>
+        </vizzy-mfd>
+    </vizzy-div>
     <p>设置文本框文字信息，大小</p> 
 
 

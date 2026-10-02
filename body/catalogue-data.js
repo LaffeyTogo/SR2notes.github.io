@@ -29,9 +29,9 @@ export const Catalogue = [
                         "path": "../body/program/event/broadcast_with_data_craft/"
                     },
                     {
-                        "id": "body/program/event/broadcast_with_data_to nearby crafts",
-                        "title": "broadcast_with_data_to nearby crafts",
-                        "path": "../body/program/event/broadcast_with_data_to nearby crafts/"
+                        "id": "body/program/event/broadcast_with_data_to_nearby_crafts",
+                        "title": "broadcast_with_data_to_nearby_crafts",
+                        "path": "../body/program/event/broadcast_with_data_to_nearby_crafts/"
                     },
                     {
                         "id": "body/program/event/on_and_docked",
@@ -73,6 +73,16 @@ export const Catalogue = [
                         "id": "body/program/multi-function display/create_widget_named",
                         "title": "create_widget_named",
                         "path": "../body/program/multi-function display/create_widget_named/"
+                    },
+                    {
+                        "id": "body/program/multi-function display/initialize_texture_width_and_height",
+                        "title": "initialize_texture_width_and_height",
+                        "path": "../body/program/multi-function display/initialize_texture_width_and_height/"
+                    },
+                    {
+                        "id": "body/program/multi-function display/set_label_alignment_to",
+                        "title": "set_label_alignment_to",
+                        "path": "../body/program/multi-function display/set_label_alignment_to/"
                     },
                     {
                         "id": "body/program/multi-function display/set_label_to",
