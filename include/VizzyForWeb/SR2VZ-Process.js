@@ -120,6 +120,24 @@ class VizzyTrigger extends VizzyInstruction
 }
 
 
+class VizzyMFD extends VizzyInstruction
+{            
+    CreatePolygon()
+    {
+        const polygon = document.createElementNS(
+            "http://www.w3.org/2000/svg",
+            "polygon"
+        );
+
+        polygon.setAttribute("fill", "#2E80B7");
+        polygon.setAttribute("stroke", "#305982");
+        polygon.setAttribute("stroke-width", 2);
+
+        return polygon;
+    }
+    
+}
+
 
 class VizzyEvent extends VizzyTrigger
 {            
@@ -162,4 +180,5 @@ class VizzyEvent extends VizzyTrigger
 
 customElements.define('vizzy-event', VizzyEvent);
 customElements.define('vizzy-instruction', VizzyInstruction);
+customElements.define('vizzy-mfd', VizzyMFD);
 customElements.define('vizzy-trigger', VizzyTrigger);

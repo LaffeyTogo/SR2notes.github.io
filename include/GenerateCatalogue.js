@@ -5,6 +5,10 @@ function scan(dir, baseDir = dir) {
     const result = [];
 
     for (const name of fs.readdirSync(dir)) {
+        if (name.startsWith("_"))
+                continue;
+
+
         const fullPath = path.join(dir, name);
         const stat = fs.statSync(fullPath);
 

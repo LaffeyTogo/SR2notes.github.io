@@ -23,6 +23,8 @@ class VizzyVarbles extends HTMLElement
         this.style.marginTop        = '3px';
         this.style.marginBottom     = '3px';
 
+        this.style.zIndex           = "0";
+
         // 画背景 创建 SVG 和图像  
         const SVG_ = document.createElementNS("http://www.w3.org/2000/svg", "svg");
         SVG_.style.position = "absolute";
@@ -85,6 +87,23 @@ class VizzyParameter extends VizzyVarbles
 }
 
 
+class VizzyInformation extends VizzyVarbles
+{
+   
+
+    CreateRect()
+    {
+        const rect_ = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+        rect_.setAttribute("rx", "14");
+        rect_.setAttribute("ry", "14");
+        rect_.setAttribute("fill", "#404040");
+        rect_.setAttribute("stroke", "#303030");
+
+        this.style.paddingRight =   '0.4em';
+        this.style.minHeight        = '30px';
+        return rect_;
+    }
+}
 
 
 
@@ -253,3 +272,4 @@ customElements.define('vizzy-discriminant', VizzyDiscriminant);
 customElements.define('vizzy-operators', VizzyOperators);
 customElements.define('vizzy-varbles', VizzyVarbles);
 customElements.define('vizzy-parameter', VizzyParameter);
+customElements.define('vizzy-information', VizzyInformation);

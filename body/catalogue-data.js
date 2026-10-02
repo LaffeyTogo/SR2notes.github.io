@@ -11,11 +11,6 @@ export const Catalogue = [
         ]
     },
     {
-        "id": "body/example Template",
-        "title": "example Template",
-        "path": "../body/example Template/"
-    },
-    {
         "id": "body/program",
         "title": "program",
         "children": [
@@ -67,6 +62,32 @@ export const Catalogue = [
                         "id": "body/program/event/receive_with",
                         "title": "receive_with",
                         "path": "../body/program/event/receive_with/"
+                    }
+                ]
+            },
+            {
+                "id": "body/program/multi-function display",
+                "title": "multi-function display",
+                "children": [
+                    {
+                        "id": "body/program/multi-function display/create_widget_named",
+                        "title": "create_widget_named",
+                        "path": "../body/program/multi-function display/create_widget_named/"
+                    },
+                    {
+                        "id": "body/program/multi-function display/set_label_to",
+                        "title": "set_label_to",
+                        "path": "../body/program/multi-function display/set_label_to/"
+                    },
+                    {
+                        "id": "body/program/multi-function display/set_widget_anchor_to",
+                        "title": "set_widget_anchor_to",
+                        "path": "../body/program/multi-function display/set_widget_anchor_to/"
+                    },
+                    {
+                        "id": "body/program/multi-function display/set_widget_to",
+                        "title": "set_widget_to",
+                        "path": "../body/program/multi-function display/set_widget_to/"
                     }
                 ]
             },

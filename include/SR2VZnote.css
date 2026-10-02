@@ -13,17 +13,22 @@ body, html {
 
 lf-content
 {
+    flex: 1 1 auto; 
+    
     box-sizing: border-box;
-    padding-right: clamp(1em, 10%, 25%);
-    padding-left: clamp(1em, 10%, 25%);
+   
+    padding-left:  max((100% - 80em) / 2, 3em);
+    padding-right: max((100% - 80em) / 2, 3em);
     padding-top: 0em;
     padding-bottom: 3em;
     
     min-width: 0;
     width: auto;
+
 }
-
-
+lf-content > * {
+    max-width: 80em;
+}
 
 lf-catalogue
 {
@@ -71,3 +76,23 @@ h3 {
     margin-top: 2px;
     margin-bottom: 0.5em;
 }
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #f2f2f2; /* 灰底 */
+}
+
+table th, table td {
+    padding: 0px 1em;
+    border: 1px solid #ffffff; /* 白色分隔线 */
+    color: #333;
+}
+
+table th {
+    background: #e6e6e6; /* 表头稍深一点的灰 */
+    white-space: nowrap;
+    font-weight: bold;
+}
+

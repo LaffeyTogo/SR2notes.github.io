@@ -19,6 +19,8 @@ export class Page
         const container = document.createElement("div");
         container.style.display         = "flex";
         container.style.flexdirection   = "row";
+        container.style.width           = "100%";
+
         
         container.append
         (

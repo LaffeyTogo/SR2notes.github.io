@@ -90,6 +90,7 @@ class VizzyOctagon extends HTMLElement
         this.style.flexDirection    = 'row';
         this.style.width            = 'fit-content';
         this.style.alignItems       = 'center';
+        
         if (this.parentNode.tagName === "VIZZY-INSTRUCTION") 
         {
             this.style.transform    = "translateY(-2.5px)";
@@ -167,6 +168,8 @@ class VizzyMethod extends HTMLElement
         this.style.display          = 'inline-flex';
         this.style.alignItems       = 'center';
 
+        this.style.zIndex           = "0";
+
 
 
         //画背景 创建 SVG 和图像  
@@ -176,18 +179,13 @@ class VizzyMethod extends HTMLElement
         SVG_.setAttribute("width", "100%");
         SVG_.setAttribute("height", "100%");
 
+
+        
+
+
+
         // 在 SVG 中创建图像
-        const rect_ = document.createElementNS("http://www.w3.org/2000/svg", "rect");
-        if (this.parentNode.tagName === "VIZZY-OPERATORS") 
-        {
-            rect_.setAttribute("fill", "#1F5C85");
-        } 
-        else 
-        {
-            rect_.setAttribute("fill", "#303030");
-            rect_.setAttribute("stroke", "#202020");
-            rect_.setAttribute("stroke-width", 1);
-        }
+        const rect_ = this.CreateRect();
         SVG_.appendChild(rect_);
 
         // 在 SVG 中创建>
@@ -204,13 +202,17 @@ class VizzyMethod extends HTMLElement
         const img_ = document.createElement("img");
         switch (type) 
         {
-            case 'mun':
+            case 'num':
                 img_.src = "../../include/VizzyForWeb/TypeTag_num.png";
                 img_.style.width = "20px";
                 img_.style.height = "20px";
                 img_.style.marginLeft       = '5px';
                 break;
             case 'tex':
+                img_.src = "../../include/VizzyForWeb/TypeTag_tex.png";
+                img_.style.width = "20px";
+                img_.style.height = "20px";
+                img_.style.marginLeft       = '5px';
                 break;
             case 'vec':
                 img_.src = "../../include/VizzyForWeb/TypeTag_vec.png";
@@ -257,9 +259,55 @@ class VizzyMethod extends HTMLElement
         // 监听当前元素的尺寸变化
         resizeObserver.observe(this);
     }
+
+
+    CreateRect()
+    {
+        
+        const rect_ = document.createElementNS(
+            "http://www.w3.org/2000/svg",
+            "rect"
+        );
+
+        if (this.parentNode.tagName === "VIZZY-OPERATORS" || this.parentNode.tagName === "VIZZY-MFD" ) 
+        {
+            rect_.setAttribute("fill", "#1F5C85");
+            rect_.setAttribute("stroke", "#305982");
+
+        } 
+        else 
+        {
+            rect_.setAttribute("fill", "#303030");
+            rect_.setAttribute("stroke", "#202020");
+            rect_.setAttribute("stroke-width", 1);
+        }
+
+        return rect_;
+    }
 }
 
+
+
+class VizzyMethodBlue extends VizzyMethod
+{
+    CreateRect()
+    {
+        
+        const rect_ = document.createElementNS(
+            "http://www.w3.org/2000/svg",
+            "rect"
+        );
+
+        rect_.setAttribute("fill", "#1F5C85"); 
+        rect_.setAttribute("stroke", "#305982");
+
+        rect_.setAttribute("stroke-width", 1);
+
+        return rect_;
+    }
+}
 
 customElements.define('vizzy-octagon', VizzyOctagon);
 customElements.define('vizzy-elliptical', VizzyElliptical);
 customElements.define('vizzy-method', VizzyMethod);
+customElements.define('vizzy-method-blue', VizzyMethodBlue);
